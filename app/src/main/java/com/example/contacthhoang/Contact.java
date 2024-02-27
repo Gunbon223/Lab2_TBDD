@@ -6,11 +6,19 @@ public class Contact {
     private String phone;
     private boolean status;
     private static int autoId;
+    private String avatarPath;
     public Contact(int id, String name, String phone){
         this.id=++autoId;
         this.name=name;
         this.phone=phone;
         this.status=false;
+    }
+
+    public void setAvatarPath(String avatarPath) {
+        this.avatarPath = avatarPath;
+    }
+    public String getAvatarPath() {
+        return avatarPath;
     }
 
     public int getId() {
